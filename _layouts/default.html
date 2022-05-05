@@ -40,6 +40,8 @@
           
         {% endfor %}
         {% for collection in site.collections %}
+          {{site.collection}}
+          {{site[collect.label]}}
           {% if collection.title %}
             <details>
                 <summary>{{ collection.title }} {{collection.label}}</summary>
