@@ -13,3 +13,15 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
+
+collections:
+  projects:
+    output: true
+    title: Project Listing
+    permalink: /projects/
+    layout: "default"
+  guides:
+    output: true
+    title: Guides Listing
+    permalink: /guides/
+    layout: "default"
