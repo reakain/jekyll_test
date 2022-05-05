@@ -31,7 +31,7 @@
           {% if collection.title %}
             <details>
                 <summary>{{ collection.title }}</summary>
-                {% for item in site[collection.label] %}
+                {% for item in collection.docs %}
                   <a href="{{ item.url }}">{{ item.title }}</a>
                 {% endfor %}
             </details>
