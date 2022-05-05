@@ -3,4 +3,6 @@ Blah blah
 
 [Projects](./_projects/index.md)
 
-[Guides](./_guides/guides.md)
+[Canbot](./_projects/canbot.md)
+
+[Guides](./_guides/index.md)

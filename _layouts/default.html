@@ -28,7 +28,6 @@
         <a href="https://github.com/reakain">GitHub</a>
         <a href="https://www.thingiverse.com/reakain">Thingiverse</a>
 
-        {{:toc}}
         <!-- {% for p in site.pages %}
           <details>
             <summary>{{p.title}}</summary>
@@ -59,11 +58,7 @@
   
     <!-- Page content -->
     <div class="main">
-      * This will become a table of contents (this text will be scrapped).
-      {:toc}
-      {{:toc}}
-      {{toc}}
-      {{site.toc}}
+      {{page.collection}}
         {{ content }}
     </div> 
 </body>
