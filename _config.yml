@@ -63,11 +63,9 @@ defaults:
       path: "*/*.md"
     values:
       layout: "default"
-      about: bleh
   # _projects
   - scope:
       path: "_projects"
-      type: projects
     values:
       layout: default
       toc: true
@@ -75,7 +73,6 @@ defaults:
   # _guides
   - scope:
       path: "_guides"
-      type: guides
     values:
       layout: default
       toc: true
