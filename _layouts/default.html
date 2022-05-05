@@ -38,13 +38,14 @@
           </details>
           
         {% endfor %}
-        {% for collection in site.collections | where: collection.docs.size > 0 %}
+        {% for collection in site.collections %}
           {% if collection.title %}
             <details>
                 <summary>{{ collection.title }}</summary>
                 {% for item in collection.docs %}
-                  <a href="{{ item.url }}">{{ item.title }}</a>
+                  <a href="{{ item.relative_url }}">{{ item.title }}</a>
                 {% endfor %}
+                {{collection}}
             </details>
           {% endif %}
         {% endfor %}
