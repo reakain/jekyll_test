@@ -24,22 +24,24 @@
     <!-- Side navigation -->
     <div class="sidenav">
         <img src="static/media/header.png" alt="Robot Raccoon image">
-        <a href="static/media/PrestonRhian_CV.pdf">CV</a>
+        <a href="static/media/blah.pdf">CV</a>
         <a href="https://github.com/reakain">GitHub</a>
         <a href="https://www.thingiverse.com/reakain">Thingiverse</a>
         {% for collection in site.collections %}
+          {% if collection.title %}
             <details>
                 <summary>{{ collection.title }}</summary>
                 {% for item in site[collection.label] %}
-                <a href="{{ item.url }}">{{ item.title }}</a>
+                  <a href="{{ item.url }}">{{ item.title }}</a>
                 {% endfor %}
             </details>
+          {% endif %}
         {% endfor %}
       </div>
 
       <!-- Header -->
       <div class="header">
-        {{ page.title }}
+        <h1>{{ page.title }}</h1>
       </div>
   
     <!-- Page content -->
