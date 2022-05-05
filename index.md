@@ -1,8 +1,8 @@
 # Homepage
 Blah blah
 
-[Projects](./_projects/index.md)
+[Projects](./projects/index.md)
 
-[Canbot](./_projects/canbot.md)
+[Canbot](./projects/canbot.md)
 
-[Guides](./_guides/index.md)
+[Guides](./guides/index.md)

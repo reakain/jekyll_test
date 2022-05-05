@@ -65,14 +65,14 @@ defaults:
       layout: "default"
   # _projects
   - scope:
-      path: "_projects"
+      path: "projects"
     values:
       layout: default
       toc: true
-      category: projects
+      collection: projects
   # _guides
   - scope:
-      path: "_guides"
+      path: "guides"
     values:
       layout: default
       toc: true
