@@ -33,4 +33,14 @@ defaults:
       path: "*/*.md"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: default
 
