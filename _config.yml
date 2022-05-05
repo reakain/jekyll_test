@@ -1,6 +1,5 @@
 plugins:
   - jekyll-relative-links
-  - jekyll-sitemap
   - jekyll-optional-front-matter
   - jekyll-default-layout
 relative_links:
@@ -20,9 +19,6 @@ include:
 collections:
   projects:
     output: true
-    title: Project Listing
-    layout: "default"
   guides:
     output: true
-    title: Guides Listing
-    layout: "default"
+
