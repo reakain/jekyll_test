@@ -20,6 +20,7 @@ include:
 # Site Settings
 locale                   : "en-US"
 title                    : "Homepage Hell"
+title_separator          : "-"
 name                     : &name "bleb" # &name is a YAML anchor which can be *referenced later
 description              : &description "Bleeeeh"
 url                      : https://reakain.github.io # the base hostname & protocol for your site e.g. "https://reakain.github.io"
@@ -31,16 +32,30 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
 # Collections
 collections:
   projects:
     output: true
     title: Project Listing
     permalink: /:collection/:path/
+    toc: true
   guides:
     output: true
     title: Guides Listing
     permalink: /:collection/:path/
+    toc: true
 
 
 # Defaults
