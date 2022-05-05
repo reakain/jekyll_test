@@ -15,6 +15,26 @@ body{
     padding-top: 20px;
   }
   
+  .sidenav details {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #a1a1a1;
+    display: block;
+  }
+
+  .sidenav details:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav details a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #a1a1a1;
+    display: block;
+  }
+
   /* The navigation menu links */
   .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -22,6 +42,10 @@ body{
     font-size: 25px;
     color: #a1a1a1;
     display: block;
+  }
+
+  .sidenav details a:hover {
+    color: #f1f1f1;
   }
   
   /* When you mouse over the navigation links, change their color */
