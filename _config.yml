@@ -17,9 +17,20 @@ include:
   - _projects
   - _guides
 
+collections:
+  projects:
+    output: true
+    title: Project Listing
+    permalink: /:collection/:path/
+  guides:
+    output: true
+    title: Guides Listing
+    permalink: /:collection/:path/
+
 defaults:
   -
     scope: 
-      path: "*.md"
+      path: "*/*.md"
     values:
       layout: "default"
+
