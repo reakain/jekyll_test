@@ -63,21 +63,24 @@ defaults:
       path: "*/*.md"
     values:
       layout: "default"
-      toc: true
+      about: bleh
   # _projects
   - scope:
-      path: ""
+      path: "_projects"
       type: projects
     values:
       layout: default
       toc: true
+      category: projects
   # _guides
   - scope:
-      path: ""
+      path: "_guides"
       type: guides
     values:
       layout: default
       toc: true
+      collection: guides
+
 
 # Outputting
 permalink: /:categories/:title/
