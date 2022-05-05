@@ -28,7 +28,7 @@
         <a href="https://github.com/reakain">GitHub</a>
         <a href="https://www.thingiverse.com/reakain">Thingiverse</a>
         {% for collection in site.collections %}
-          {% if collection.title %}
+          {% if collection.size > 0 %}
             <details>
                 <summary>{{ collection.title }}</summary>
                 {% for item in site[collection.label] %}
