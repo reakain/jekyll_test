@@ -50,12 +50,11 @@ collections:
     output: true
     title: Project Listing
     permalink: /:collection/:path/
-    toc: true
   guides:
     output: true
     title: Guides Listing
     permalink: /:collection/:path/
-    toc: true
+    
 
 
 # Defaults
@@ -64,18 +63,21 @@ defaults:
       path: "*/*.md"
     values:
       layout: "default"
+      toc: true
   # _projects
   - scope:
       path: ""
       type: projects
     values:
       layout: default
+      toc: true
   # _guides
   - scope:
       path: ""
       type: guides
     values:
       layout: default
+      toc: true
 
 # Outputting
 permalink: /:categories/:title/
