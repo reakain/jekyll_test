@@ -28,7 +28,15 @@
         <a href="https://github.com/reakain">GitHub</a>
         <a href="https://www.thingiverse.com/reakain">Thingiverse</a>
         {% for p in site.pages %}
+          <details>
+            <summary>{{p.title}}</summary>
+            <a href="{{ p.relative_path }}">{{p.title}}</a>
+          <a href="{{ p.path }}">{{p.title}}</a>
+          <a href="{{ p.relative_url }}">{{p.title}}</a>
           <a href="{{ p.url }}">{{p.title}}</a>
+          {{p}}
+          </details>
+          
         {% endfor %}
         {% for collection in site.collections | where: collection.docs.size > 0 %}
           {% if collection.title %}
