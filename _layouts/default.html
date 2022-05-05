@@ -29,7 +29,7 @@
         <a href="https://www.thingiverse.com/reakain">Thingiverse</a>
         {% for collection in site.collections %}
             <details>
-                <summary>{{ collection.label }}</summary>
+                <summary>{{ collection.title }}</summary>
                 {% for item in site[collection.label] %}
                 <a href="{{ item.url }}">{{ item.title }}</a>
                 {% endfor %}

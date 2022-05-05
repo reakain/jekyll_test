@@ -14,7 +14,9 @@ include:
   - PULL_REQUEST_TEMPLATE.md
 
 collections:
-  Projects:
+  projects:
     output: true
-  Guides:
+    title: Project Listing
+  guides:
     output: true
+    title: Guides Listing
