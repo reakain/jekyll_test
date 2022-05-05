@@ -14,6 +14,8 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
+  - _projects
+  - _guides
 
 defaults:
   -
@@ -21,15 +23,3 @@ defaults:
       path: "*.md"
     values:
       layout: "default"
-
-collections:
-  projects:
-    output: true
-    title: Project Listing
-    permalink: /:projects/
-    layout: "default"
-  guides:
-    output: true
-    title: Guides Listing
-    permalink: /:guides/
-    layout: "default"
