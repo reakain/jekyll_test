@@ -27,6 +27,9 @@
         <a href="res/blah.pdf">CV</a>
         <a href="https://github.com/reakain">GitHub</a>
         <a href="https://www.thingiverse.com/reakain">Thingiverse</a>
+        {% for p in site.pages %}
+          <a href="{{ p.url }}">{{p.title}}</a>
+        {% endfor %}
         {% for collection in site.collections | where: collection.docs.size > 0 %}
           {% if collection.title %}
             <details>
