@@ -2,6 +2,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-optional-front-matter
+  - jekyll-default-layout
 relative_links:
   enabled: true
   collections: true
@@ -15,21 +16,13 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-defaults:
-  -
-    scope: 
-      path: "*.html"
-    values:
-      layout: "default"
 
 collections:
   projects:
     output: true
     title: Project Listing
-    permalink: /:projects/
     layout: "default"
   guides:
     output: true
     title: Guides Listing
-    permalink: /:guides/
     layout: "default"
