@@ -16,9 +16,3 @@ include:
   - PULL_REQUEST_TEMPLATE.md
 
 
-collections:
-  projects:
-    output: true
-  guides:
-    output: true
-
