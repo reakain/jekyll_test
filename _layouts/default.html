@@ -43,8 +43,8 @@
         {% if collection.title %}
             <details>
                 <summary>{{ collection.title }}</summary>
-                
-                {% for p in site.pages | where: where: "collection",collection.label %}
+                {% assign p_sorted = site.pages | where: "collection",collection.label %}
+                {% for p in p_sorted %}
                   <a href="{{ p.url }}">{{ p.title }}</a>
                 {% endfor %}
             </details>
