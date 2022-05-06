@@ -49,7 +49,6 @@ collections:
   projects:
     output: true
     title: Project Listing
-    permalink: /:collection/:path/
   guides:
     output: true
     title: Guides Listing
@@ -60,23 +59,22 @@ collections:
 # Defaults
 defaults:
   - scope: 
-      path: "*/*.md"
+      path: "*.md"
     values:
       layout: "default"
   # _projects
   - scope:
-      path: "projects"
+      path: "_projects"
     values:
       layout: default
       toc: true
       collection: projects
   # _guides
   - scope:
-      path: "guides"
+      path: "_guides"
     values:
       layout: default
       toc: true
-      collection: guides
 
 
 # Outputting

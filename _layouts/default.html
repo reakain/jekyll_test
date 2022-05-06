@@ -30,23 +30,20 @@
 
         <!-- {% for p in site.pages %}
           <details>
-            <summary>{{p.title}}</summary>
+            <summary>{{p.title}} {{p.collection}}</summary>
             <a href="{{ p.relative_path }}">{{p.title}}</a>
           <a href="{{ p.path }}">{{p.title}}</a>
           <a href="{{ p.relative_url }}">{{p.title}}</a>
-          <a href="{{ p.url }}">{{p.title}}</a>
+          <a href="{{ p.url }}">{{p.title}} {{p.collection}}</a>
           {{p}}
           </details>
           
         {% endfor %}
         {% for collection in site.collections %}
-          {{site.collection}}
-          {{site[collection.label]}}
-          {{collection}}
             <details>
                 <summary>{{ collection.title }} {{collection.label}}</summary>
-                {% for item in site[collection.label] %}
-                  <a href="{{ item.relative_url }}">{{ item.title }}</a>
+                {% for p in site.pages | where p.collection == collection.label %}
+                  <a href="{{ p.relative_url }}">{{ p.title }}</a>
                 {% endfor %}
             </details>
         {% endfor %} -->
