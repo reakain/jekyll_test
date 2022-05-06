@@ -33,10 +33,10 @@
             <details>
                 <summary>{{ collection.title }}</summary>
                 {% assign p_sorted = site.pages | where: "collection",collection.label %}
-                <a href="{{collection.permalink}}">Overview</a>
+                <a href="{{collection.permalink}}{{collection.path}}">Overview</a>
                 {% for p in p_sorted %}
                 {% if p.name != 'index.md' %}
-                  <a href="{{site.baseurl}}{{ p.url }}">{{ p.title }}</a>
+                  <a href="{{site.baseurl}}{{ p.path }}">{{ p.title }}</a>
                   {% endif %}
                 {% endfor %}
             </details>
