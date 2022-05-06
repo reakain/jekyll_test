@@ -48,10 +48,12 @@ kramdown:
 collections:
   projects:
     output: true
-    title: Project Listing
+    title: Projects
+    permalink: /:collection/:path/
   guides:
     output: true
-    title: Guides Listing
+    title: Guides
+    permalink: /:collection/:path/
     
 
 
