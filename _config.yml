@@ -70,6 +70,7 @@ defaults:
       layout: default
       toc: true
       collection: projects
+      permalink: /projects/:path/
   # _guides
   - scope:
       path: "_guides"
