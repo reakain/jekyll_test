@@ -36,7 +36,7 @@
                 <a href="{{ collection.url }}">Overview</a>
                 {% for p in p_sorted %}
                 {% if p.name != 'index.md' %}
-                  <a href="{{ p.url }}">{{ p.title }}</a>
+                  <a href="{{site.baseurl}}{{ p.url }}">{{ p.title }}</a>
                   {% endif %}
                 {% endfor %}
             </details>
