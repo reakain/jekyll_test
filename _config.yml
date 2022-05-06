@@ -49,11 +49,11 @@ collections:
   projects:
     output: true
     title: Projects
-    permalink: /jekyll_test/projects/:path/
+    permalink: /jekyll_test/projects/
   guides:
     output: true
     title: Guides
-    permalink: /jekyll_test/guides/:path/
+    permalink: /jekyll_test/guides/
     
 
 
@@ -70,7 +70,6 @@ defaults:
       layout: default
       toc: true
       collection: projects
-      permalink: /projects/:name/
   # _guides
   - scope:
       path: "_guides"
@@ -78,7 +77,6 @@ defaults:
       layout: default
       toc: true
       collection: guides
-      permalink: /guides/:name/
 
 
 # Outputting

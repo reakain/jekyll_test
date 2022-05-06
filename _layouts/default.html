@@ -33,7 +33,7 @@
             <details>
                 <summary>{{ collection.title }}</summary>
                 {% assign p_sorted = site.pages | where: "collection",collection.label %}
-                <a href="{{site.baseurl}}{{ collection.label }}">Overview</a>
+                <a href="{{site.baseurl}}/{{ collection.label }}/">Overview</a>
                 {% for p in p_sorted %}
                 {% if p.name != 'index.md' %}
                   <a href="{{site.baseurl}}{{ p.url }}">{{ p.title }}</a>
