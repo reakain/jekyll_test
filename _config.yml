@@ -70,7 +70,7 @@ defaults:
       layout: default
       toc: true
       collection: projects
-      permalink: /projects/:path/
+      permalink: /projects/:name/
   # _guides
   - scope:
       path: "_guides"
@@ -78,6 +78,7 @@ defaults:
       layout: default
       toc: true
       collection: guides
+      permalink: /guides/:name/
 
 
 # Outputting
