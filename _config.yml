@@ -49,11 +49,9 @@ collections:
   projects:
     output: true
     title: Project Listing
-    permalink: /projects/:title/
   guides:
     output: true
     title: Guides Listing
-    permalink: /guides/:path/
     
 
 
