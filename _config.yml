@@ -49,11 +49,11 @@ collections:
   projects:
     output: true
     title: Projects
-    permalink: /jekyll_test/:path/
+    permalink: /jekyll_test/_projects/
   guides:
     output: true
     title: Guides
-    permalink: /jekyll_test/:path/
+    permalink: /jekyll_test/_guides/
     
 
 
