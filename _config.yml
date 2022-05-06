@@ -49,11 +49,11 @@ collections:
   projects:
     output: true
     title: Project Listing
-    permalink: /projects/:path/
+    permalink: /projects/:title/
   guides:
     output: true
     title: Guides Listing
-    permalink: /:collection/:path/
+    permalink: /guides/:path/
     
 
 
@@ -76,6 +76,7 @@ defaults:
     values:
       layout: default
       toc: true
+      collection: guides
 
 
 # Outputting
