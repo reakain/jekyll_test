@@ -42,8 +42,9 @@
         {% for collection in site.collections %}
         {% if collection.title %}
             <details>
-                <summary>{{ collection.title }} {{collection.label}}</summary>
-                {% for p in site.pages | where: p.collection == collection.label %}
+                <summary>{{ collection.title }}</summary>
+                
+                {% for p in site.pages | where: where: "collection",collection.label %}
                   <a href="{{ p.url }}">{{ p.title }}</a>
                 {% endfor %}
             </details>
